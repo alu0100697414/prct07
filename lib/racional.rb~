@@ -1,3 +1,4 @@
+include Comparable
 class Racional
   attr_reader :num, :den
   	def initialize(num,den)
@@ -18,9 +19,6 @@ class Racional
 	def to_f
 		@num/@den
 	end	
-	def == (rac)
-		((self.num == rac.num) && (self.den == rac.den))
-	end
 	def abs
 		Racional.new(@num.abs,@den.abs)
 	end
@@ -65,24 +63,16 @@ class Racional
 		((@num * other.den) % (@den * other.num))
 	end
 	
-	#Menor que
-	def <(other)
-		(@num * other.den) < (@den * other.num)
+	#Menor igual mayor(Operador guerra de las galaxias)
+	def <=>(other)
+	  if((@num * other.den)<(@den * other.num))
+	    return -1
+	    elseif((@num * other.den)==(@den * other.num))
+	    return 0
+	     elseif((@num * other.den)>(@den * other.num))
+	    return 1
+	  end
 	end
-	
-	#Mayor que
-	def >(other)
-		(@num * other.den) > (@den * other.num)
-	end
-	
-	#Menor o igual que
-	def <=(other)
-		(@num * other.den) <= (@den * other.num)
-	end
-	
-	#Mayor o igual que
-	def >=(other)
-		(@num * other.den) >= (@den * other.num)
-	end
+	    
 	
 end
