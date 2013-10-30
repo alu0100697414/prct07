@@ -1,0 +1,3 @@
+No hemos podido terminar de realizar la practica porque al querer subir mi parte del trabajo al repositorio de mi compañero, no me da permiso de escritura, y pensamos que puede ser porque no nos llega el correo para compartir el repositorio. 
+De esta manera cada uno ha subido su parte por separado a espera de una contestación vuestra.
+El repositorio de mi compañero es el siguiente: git@bitbucket.org:alu0100622492/lpp.git

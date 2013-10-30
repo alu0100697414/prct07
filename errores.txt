@@ -1,0 +1,251 @@
+.....F
+
+Failures:
+
+  1) Racional Se debe mostar por la consola la fraccion de la forma: a/b, 
+		donde a es el numerador y b el denominador
+     Failure/Error: @rac.new(1,2).to_s.should == "1/2"
+       expected: "1/2"
+            got: "#<Racional:0x7f3edafa4db0>" (using ==)
+     # ./spec/racional_spec.rb:29
+
+Finished in 0.01431 seconds
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:28 # Racional Se debe mostar por la consola la fraccion de la forma: a/b, 
+		donde a es el numerador y b el denominador
+......F
+
+Failures:
+
+  1) Racional Se debe mostar por la consola la fraccion en formato flotante
+     Failure/Error: @rac.new(1,2).to_f.should == 1/2
+     NoMethodError:
+       undefined method `to_f' for #<Racional:0x7fe4208a0550 @den=2, @num=1>
+     # ./spec/racional_spec.rb:33
+
+Finished in 0.00495 seconds
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:32 # Racional Se debe mostar por la consola la fraccion en formato flotante
+.......F
+
+Failures:
+
+  1) Racional Se debe comparar si dos fracciones son iguales con ==
+     Failure/Error: @rac.new(1,2).should == @rac.new(2,4)
+       expected: #<Racional:0x7f15101d1218 @den=2, @num=1>
+            got: #<Racional:0x7f15101d1240 @den=2, @num=1> (using ==)
+       Diff:
+       @@ -1,2 +1,2 @@
+       -#<Racional:0x7f15101d1218 @den=2, @num=1>
+       +#<Racional:0x7f15101d1240 @den=2, @num=1>
+     # ./spec/racional_spec.rb:37
+
+Finished in 0.00581 seconds
+8 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:36 # Racional Se debe comparar si dos fracciones son iguales con ==
+........F
+
+Failures:
+
+  1) Racional Se debe calcular el valor absoluto de una fraccion con el metodo abs
+     Failure/Error: @rac.new(-2,3).abs.should == @rac.new(2,3)
+     NoMethodError:
+       undefined method `abs' for #<Racional:0x7f59276e0550 @den=3, @num=-2>
+     # ./spec/racional_spec.rb:41
+
+Finished in 0.00601 seconds
+9 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:40 # Racional Se debe calcular el valor absoluto de una fraccion con el metodo abs
+.........F
+
+Failures:
+
+  1) Racional Se debe calcular el reciproco de una fraccion con el metodo reciprocal
+     Failure/Error: @rac.new(-2,3).reciproco.should == @rac.new(-3,2)
+     NoMethodError:
+       undefined method `reciproco' for #<Racional:0x7f4e9f95f368 @den=3, @num=-2>
+     # ./spec/racional_spec.rb:45
+
+Finished in 0.00501 seconds
+10 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:44 # Racional Se debe calcular el reciproco de una fraccion con el metodo reciprocal
+..........F
+
+Failures:
+
+  1) Racional Se debe calcular el opuesto de una fraccion con - 
+     Failure/Error: (-@rac.new(2,4)).should == @rac.new(-1,2)
+     NoMethodError:
+       undefined method `-@' for #<Racional:0x7f4e69012228 @den=2, @num=1>
+     # ./spec/racional_spec.rb:49
+
+Finished in 0.00544 seconds
+11 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:48 # Racional Se debe calcular el opuesto de una fraccion con - 
+...........F
+
+Failures:
+
+  1) Racional Se debe sumar dos fracciones con + y dar el resultado de forma reducida
+     Failure/Error: (@rac.new(1,2) + @rac.new(1,4)).should == @rac.new(3,4)
+     NoMethodError:
+       undefined method `+' for #<Racional:0x7f521a8e92c0 @den=2, @num=1>
+     # ./spec/racional_spec.rb:53
+
+Finished in 0.00481 seconds
+12 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:52 # Racional Se debe sumar dos fracciones con + y dar el resultado de forma reducida
+............F
+
+Failures:
+
+  1) Racional Se debe restar dos fracciones con - y dar el resultado de forma reducida
+     Failure/Error: (@rac.new(6,8) - @rac.new(1,4)).should == @rac.new(1,2)
+     NoMethodError:
+       undefined method `-' for #<Racional:0x7f8b6ebfcfb0 @den=4, @num=3>
+     # ./spec/racional_spec.rb:57
+
+Finished in 0.00503 seconds
+13 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:56 # Racional Se debe restar dos fracciones con - y dar el resultado de forma reducida
+.............F
+
+Failures:
+
+  1) Racional Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+     Failure/Error: (@fr.new(1,2) * @fr.new(2,4)).should == @fr.new(1,4)
+     NoMethodError:
+       undefined method `new' for nil:NilClass
+     # ./spec/racional_spec.rb:61
+
+Finished in 0.00423 seconds
+14 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:60 # Racional Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+.............F
+
+Failures:
+
+  1) Racional Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+     Failure/Error: (@fr.new(1,2) * @fr.new(2,4)).should == @fr.new(1,4)
+     NoMethodError:
+       undefined method `new' for nil:NilClass
+     # ./spec/racional_spec.rb:61
+
+Finished in 0.00416 seconds
+14 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:60 # Racional Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+.............FF
+
+Failures:
+
+  1) Racional Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+     Failure/Error: (@rac.new(1,2) * @rac.new(2,4)).should == @rac.new(1,4)
+     NoMethodError:
+       undefined method `*' for #<Racional:0x7fb6e079d4e0 @den=2, @num=1>
+     # ./spec/racional_spec.rb:61
+
+  2) Racional Se debe dividir dos fracciones con / y dar el resultado de forma reducida
+     Failure/Error: (@rac.new(2,3) / @rac.new(2,4)).should == @rac.new(4,3)
+     NoMethodError:
+       undefined method `/' for #<Racional:0x7fb6e079bbb8 @den=3, @num=2>
+     # ./spec/racional_spec.rb:65
+
+Finished in 0.00441 seconds
+15 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:60 # Racional Se debe multiplicar dos fracciones con * y dar el resultado de forma reducida
+rspec ./spec/racional_spec.rb:64 # Racional Se debe dividir dos fracciones con / y dar el resultado de forma reducida
+...............F
+
+Failures:
+
+  1) Racional Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida
+     Failure/Error: (@rac.new(5,1) % @rac.new(2,1)).should == 1
+     NoMethodError:
+       undefined method `%' for #<Racional:0x7f4a45b655d0 @den=1, @num=5>
+     # ./spec/racional_spec.rb:69
+
+Finished in 0.00479 seconds
+16 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:68 # Racional Se debe calcular el resto dos fracciones con % y dar el resultado de forma reducida
+................FF
+
+Failures:
+
+  1) Racional Se debe de poder comprobar si una fracion es menor que otra
+     Failure/Error: (@rac.new(1, 2) < @rac.new(3, 4)).should be_true
+     NoMethodError:
+       undefined method `<' for #<Racional:0x7f0dd08bea40 @num=1, @den=2>
+     # ./spec/racional_spec.rb:73
+
+  2) Racional Se debe de poder comprobar si una fracion es mayor que otra
+     Failure/Error: (@rac.new(1, 2) > @rac.new(3, 4)).should be_false
+     NoMethodError:
+       undefined method `>' for #<Racional:0x7f0dd08bd118 @num=1, @den=2>
+     # ./spec/racional_spec.rb:78
+
+Finished in 0.00522 seconds
+18 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:72 # Racional Se debe de poder comprobar si una fracion es menor que otra
+rspec ./spec/racional_spec.rb:77 # Racional Se debe de poder comprobar si una fracion es mayor que otra
+..................FF
+
+Failures:
+
+  1) Racional Se debe de poder comprobar si una fracion es menor o igual que otra
+     Failure/Error: (@rac.new(1, 2) <= @rac.new(2, 4)).should be_true
+     NoMethodError:
+       undefined method `<=' for #<Racional:0x7f6889b0c3b0 @num=1, @den=2>
+     # ./spec/racional_spec.rb:82
+
+  2) Racional Se debe de poder comprobar si una fracion es mayor o igual que otra
+     Failure/Error: (@rac.new(1, 2) >= @rac.new(2, 4)).should be_true
+     NoMethodError:
+       undefined method `>=' for #<Racional:0x7f6889b0a3a8 @num=1, @den=2>
+     # ./spec/racional_spec.rb:87
+
+Finished in 0.00553 seconds
+20 examples, 2 failures
+
+Failed examples:
+
+rspec ./spec/racional_spec.rb:81 # Racional Se debe de poder comprobar si una fracion es menor o igual que otra
+rspec ./spec/racional_spec.rb:86 # Racional Se debe de poder comprobar si una fracion es mayor o igual que otra

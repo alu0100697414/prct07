@@ -1,0 +1,61 @@
+No examples found.
+
+
+Finished in 0.00007 seconds
+0 examples, 0 failures
+.
+
+Finished in 0.00057 seconds
+1 example, 0 failures
+.....
+
+Finished in 0.01376 seconds
+5 examples, 0 failures
+......
+
+Finished in 0.01508 seconds
+6 examples, 0 failures
+.......
+
+Finished in 0.00506 seconds
+7 examples, 0 failures
+........
+
+Finished in 0.00451 seconds
+8 examples, 0 failures
+.........
+
+Finished in 0.00485 seconds
+9 examples, 0 failures
+..........
+
+Finished in 0.00624 seconds
+10 examples, 0 failures
+...........
+
+Finished in 0.0054 seconds
+11 examples, 0 failures
+............
+
+Finished in 0.00489 seconds
+12 examples, 0 failures
+.............
+
+Finished in 0.00507 seconds
+13 examples, 0 failures
+...............
+
+Finished in 0.00444 seconds
+15 examples, 0 failures
+................
+
+Finished in 0.00462 seconds
+16 examples, 0 failures
+..................
+
+Finished in 0.00521 seconds
+18 examples, 0 failures
+....................
+
+Finished in 0.00545 seconds
+20 examples, 0 failures
